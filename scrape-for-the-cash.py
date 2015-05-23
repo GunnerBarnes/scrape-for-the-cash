@@ -19,7 +19,7 @@ try:
 	writer = csv.writer(f)
 	writer.writerow( ('Date', 'Matchup #', 'Sport', 'Matchup Time', 'Winner %'))
 
-	days_to_get = 2
+	days_to_get = int(sys.argv[2])
 	while days_to_get > 0:
 		count = 1
 		selectedDate = date.today() - timedelta(days=days_to_get)
