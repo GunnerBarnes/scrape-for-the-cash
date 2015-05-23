@@ -28,7 +28,7 @@ while days_to_get > 0:
 		if len(winning_tr) > 1:
 			winner = winning_tr[1] #TODO: fails when a push exists
 			winning_pct = winner.find_parent("span").find_parent('td').find_parent('tr').find("span", attrs={'class': 'wpw'})
-			result = str(count) + str(", ") + sport.string + str(", ") + matchupDate.string + str(", ") + winning_pct.string
+			result = selectedDate + str(", ") + str(count) + str(", ") + sport.string + str(", ") + matchupDate.string + str(", ") + winning_pct.string
 			count += 1
 			daily.append(result)
 	days_to_get -= 1
