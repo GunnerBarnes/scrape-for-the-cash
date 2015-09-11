@@ -1,0 +1,11 @@
+README
+
+Notes to self: using Flask, python, d3, BeautifulSoup, Keen.IO
+
+Usage: run script from command line, within virtualenv 
+	python scrape-for-the-cash.py results.csv 10
+
+	args: results.csv = file to write results to
+		  10 = number of days to scrape
+
+	To view data on dashboard, run "python app.py", and navigate to 0.0.0.0:5000
